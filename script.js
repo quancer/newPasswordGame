@@ -35,12 +35,16 @@ inputData.addEventListener("keyup", () => {
   if (a.length == 1 && ruleList.innerHTML == "") {
     newRule(0);
   }
+
+  //   win(idValue) return true false
   if (a.length >= 5) {
+    // true
     console.log("bolchihloo");
     document.getElementById(`rulteTop-${0}`).style.backgroundColor = "#bdf0b4";
     document.getElementById(`rulteDesc-${0}`).style.backgroundColor = "#e9fee5";
     document.getElementById(`${1}`).style.borderColor = "#267b30";
   } else {
+    // false
     console.log("bologui");
     document.getElementById(`rulteTop-${0}`).style.backgroundColor = "#f7c9c8";
     document.getElementById(`rulteDesc-${0}`).style.backgroundColor = "#fceded";
@@ -62,3 +66,6 @@ function newRule(ind) {
   rule.appendChild(ruleDesc);
   ruleList.appendChild(rule);
 }
+
+let a = "abualaba";
+console.log(a.count("a"));
