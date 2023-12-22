@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#gamebody {
+  background-color: #fffae9 !important;
+  min-height: 100vh;
+}
+.container {
+  max-width: 485px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 2px solid; */
+  padding: 20px 0;
+}
+.inputPass {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+#inputData {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 28px;
+  padding: 15px;
+  min-height: 64px;
+  border: 1px solid #9d9d9d;
+}
+
+.rule {
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 22px auto;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 3px 3px 5px 2px rgba(60, 155, 71, 0.2);
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.rule-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ac .rule-top {
+  padding: 15px;
+  background-color: #bdf0b4;
+}
+.ac .rule-desc {
+  padding: 15px;
+  background-color: #e9fee5;
+}
+.ac {
+  order: -1;
+  border-color: #267b30;
+}
+.rule-top {
+  padding: 15px;
+  background-color: #f7c9c8;
+}
+.rule-desc {
+  padding: 15px;
+  background-color: #fceded;
+}
+/* F7C9C8
+FCEDED */
