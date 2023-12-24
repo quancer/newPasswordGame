@@ -31,7 +31,7 @@ let question = [
   },
   {
     prob: "5",
-    rule: "The digits in your password must add up to 25.",
+    rule: "The digits in your password must add up to 32.",
   },
   {
     prob: "89",
@@ -57,7 +57,8 @@ const container = createTag("div", "container");
 gamebody.appendChild(container);
 // Create siteTitle
 const siteTitle = createTag("div", "site-title");
-siteTitle.innerText = "New password game";
+siteTitle.innerText = `New password game\nЧадахгүй бол Leap1-E ангийн сурагчаас асуугаарай 😁	
+`;
 container.appendChild(siteTitle);
 // create inputPass
 const inputPass = createTag("div", "inputPass");
@@ -101,7 +102,7 @@ inputData.addEventListener("keyup", () => {
     }
   }
   if (check == question.length) {
-    alert("Наадах чинь янзын нууц үг боллоо");
+    alert("Дахиж зовоохгүй ээ. Наадах чинь янзын нууц үг боллоо");
   }
   while (check == count) {
     count++;
@@ -125,7 +126,7 @@ inputData.addEventListener("keyup", () => {
       }
     }
     if (check == question.length) {
-      alert("Наадах чинь янзын нууц үг боллоо");
+      alert("Дахиж зовоохгүй ээ. Наадах чинь янзын нууц үг боллоо");
     }
   }
   //   win(idValue) return true false
@@ -281,7 +282,7 @@ function check5(a, i) {
     sum += Number(result1[i]);
   }
   let result = false;
-  if (sum == 25) {
+  if (sum == 32) {
     result = true;
   }
   if (result) {
